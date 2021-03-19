@@ -43,7 +43,7 @@ void main() => runApp(MyApp(post: fetchPost()));
 class MyApp extends StatelessWidget {
   final Future<Post> post;
 
-  MyApp({Key key, this.post}) : super(key: key);
+  MyApp({required Key key, required this.post}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
